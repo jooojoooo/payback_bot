@@ -31,6 +31,8 @@ def payback():
     driver = webdriver.Edge(service=service, options=edge_options)
     driver.get("https://www.payback.de/coupons")
 
+    input("Login to account and save login data")
+
     wait = WebDriverWait(driver, 15)
 
     # Wait for the pb-coupon-center element to be present
